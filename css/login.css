@@ -1,0 +1,244 @@
+form.login-form {
+  display: none;
+}
+form.login-form * {
+  box-sizing: border-box;
+}
+
+.form-background {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(141, 141, 141, 0.7);
+  z-index: 19;
+  top: 0px;
+  left: 0px;
+}
+.form-background.active-form {
+  position: fixed;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-background .bad-background {
+  z-index: 19;
+  width: 100%;
+  height: 100%;
+}
+.form-background .active-form {
+  position: absolute;
+  margin: auto !important;
+  display: flex !important;
+  z-index: 20;
+}
+
+.lost-pass {
+  text-decoration: none;
+  color: #919191;
+}
+.lost-pass:hover {
+  color: black;
+}
+
+.login-form {
+  margin: 25vh auto;
+  width: max(35%, 370px);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.login-form fieldset {
+  height: 60px;
+  border: none;
+  border-bottom: 2px rgb(92, 92, 92) solid;
+  padding: 10px 0px;
+}
+.login-form fieldset input {
+  cursor: pointer;
+}
+.login-form fieldset input:focus-within {
+  cursor: default;
+}
+.login-form fieldset input[type=email], .login-form fieldset input[type=password] {
+  outline: none;
+  border: none;
+  width: 70%;
+  height: 100%;
+}
+.login-form fieldset input::-moz-placeholder {
+  letter-spacing: 4px;
+}
+.login-form fieldset input:-ms-input-placeholder {
+  letter-spacing: 4px;
+}
+.login-form fieldset input::placeholder {
+  letter-spacing: 4px;
+}
+.login-form fieldset:focus-within {
+  border: 2px dashed rgb(120, 120, 120);
+  border-bottom: 3px solid rgb(92, 92, 92);
+  border-top: 2px dashed rgb(167, 167, 167);
+  border-radius: 15px;
+}
+.login-form fieldset:focus-within input::-moz-placeholder {
+  opacity: 0%;
+}
+.login-form fieldset:focus-within input:-ms-input-placeholder {
+  opacity: 0%;
+}
+.login-form fieldset:focus-within input::placeholder {
+  opacity: 0%;
+}
+.login-form fieldset:focus-within .legend-1 {
+  display: inline-block;
+  color: rgb(167, 167, 167);
+}
+.login-form fieldset:focus-within .legend-2 {
+  display: none;
+}
+.login-form fieldset:focus-within:valid {
+  border: 2px dashed rgb(92, 92, 92);
+  border-top: 2px dashed rgb(92, 92, 92);
+  border-bottom: 3px solid rgb(92, 92, 92);
+}
+.login-form fieldset:valid .legend-1 {
+  color: rgb(0, 0, 0);
+}
+.login-form fieldset:valid .legend-2 {
+  color: rgb(0, 0, 0);
+}
+.login-form .column {
+  flex-direction: column;
+  background-color: transparent;
+}
+.login-form .split-two {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-form .split-two > label, .login-form .split-two > span {
+  width: 50%;
+  text-align: center;
+  padding: 30px;
+}
+.login-form .split-two > label.selected, .login-form .split-two > span.selected {
+  background-color: transparent;
+  cursor: pointer;
+}
+.login-form .split-two > label.not, .login-form .split-two > span.not {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.login-form .split-two button {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+.login-form .hidden {
+  display: none;
+}
+.login-form .legend-1 {
+  display: none;
+  color: rgb(167, 167, 167);
+}
+.login-form .legend-2 {
+  display: contents;
+  color: rgb(167, 167, 167);
+}
+
+.mx-30 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mega-border {
+  position: relative;
+}
+.mega-border button {
+  position: relative;
+  z-index: 4;
+  background-color: #ffffff;
+  border: #919191;
+}
+.mega-border > div {
+  z-index: 2;
+  padding: 5px;
+  background-color: rgb(110, 110, 110);
+  overflow: hidden;
+  position: relative;
+}
+.mega-border:hover > div::before {
+  content: "";
+  width: 20px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-left: solid 1px rgb(246, 246, 246);
+  border-right: solid 1px rgb(246, 246, 246);
+  position: absolute;
+  top: -250%;
+  right: 45%;
+  z-index: 1;
+  -webkit-animation-name: hover-anim;
+          animation-name: hover-anim;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes hover-anim {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes hover-anim {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+input[type=radio]#radio-1:checked ~ .login-check {
+  display: inline-flex;
+}
+input[type=radio]#radio-1:checked ~ .register-check {
+  display: none;
+}
+input[type=radio]#radio-1:checked ~ .split-two .selected {
+  background-color: transparent;
+}
+input[type=radio]#radio-1:checked ~ .split-two .not {
+  background-color: whitesmoke;
+}
+input[type=radio]#radio-2:checked ~ .register-check {
+  display: inline-flex;
+}
+input[type=radio]#radio-2:checked ~ .login-check {
+  display: none;
+}
+input[type=radio]#radio-2:checked ~ .split-two .selected {
+  background-color: whitesmoke;
+}
+input[type=radio]#radio-2:checked ~ .split-two .not {
+  background-color: transparent;
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/response.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="menu-grand-father">
+      <!--Main Menu-->
+      <nav class="menu-father">
+        <ul class="main-menu">
+          <li>
+            <span>HOME</span>
+            <hr />
+
+            <ul class="sub-menu">
+              <li>Main Home</li>
+              <li>Chocolaterie Dark</li>
+              <li>Fullscreen Slider</li>
+              <li>Grid Home</li>
+              <li>Chocolaterie Light</li>
+              <li>Cake Shop</li>
+              <li>Horizontal Showcase</li>
+              <li>Coming Soon</li>
+              <li>Landing</li>
+            </ul>
+          </li>
+          <li>
+            <span>PAGES</span>
+            <hr />
+            <ul class="sub-menu">
+              <li>About Us</li>
+              <li>Who We Are</li>
+              <li>Our Chef</li>
+              <li>Our History</li>
+              <li>Our Menu</li>
+              <li>Pricing Plans</li>
+              <li>Contact Us</li>
+              <li>Get In Touch</li>
+            </ul>
+          </li>
+          <li>
+            <span>SHOP</span>
+            <hr />
+            <ul class="sub-menu">
+              <li>Right Sidebar</li>
+              <li>Left Sidebar</li>
+              <li>With Filter</li>
+              <li>Uneven</li>
+              <li>Minimal</li>
+              <li>
+                Shop Single
+                <img
+                  class="logo"
+                  src="./images/ui/arrow-from-left.svg"
+                  alt=""
+                  width="10px"
+                />
+                <ul class="last-menu">
+                  <li>Custom Single</li>
+                  <li>Standard Single</li>
+                </ul>
+              </li>
+              <li>
+                Shop Layouts
+                <img
+                  class="logo"
+                  src="./images/ui/arrow-from-left.svg"
+                  alt=""
+                  width="10px"
+                />
+                <ul class="last-menu">
+                  <li>Two Columns</li>
+                  <li>Three Columns</li>
+                  <li>Four Columns</li>
+                  <li>Four Columns Wide</li>
+                  <li>Five Columns Wide</li>
+                  <li>Six Columns Wide</li>
+                </ul>
+              </li>
+              <li>
+                Shop Pages
+                <img
+                  class="logo"
+                  src="./images/ui/arrow-from-left.svg"
+                  alt=""
+                  width="10px"
+                />
+                <ul class="last-menu">
+                  <li>My Account</li>
+                  <li>Wishlist</li>
+                  <li>Cart</li>
+                  <li>Checkout</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span>PORTFOLIO</span>
+            <hr />
+            <ul class="sub-menu">
+              <li>Standard List</li>
+              <li>Gallery List</li>
+              <li>Masonry List</li>
+              <li>Fullscreen Slider</li>
+              <li>
+                List Layouts
+                <img
+                  class="logo"
+                  src="./images/ui/arrow-from-left.svg"
+                  alt=""
+                  width="10px"
+                />
+                <ul class="last-menu">
+                  <li>Two Columns</li>
+                  <li>Three Columns</li>
+                  <li>Four Columns</li>
+                  <li>Four Columns Wide</li>
+                  <li>Five Columns Wide</li>
+                  <li>Six Columns Wide</li>
+                </ul>
+              </li>
+              <li>
+                Single Types
+                <img
+                  class="logo"
+                  src="./images/ui/arrow-from-left.svg"
+                  alt=""
+                  width="10px"
+                />
+                <ul class="last-menu">
+                  <li>Two Columns</li>
+                  <li>Three Columns</li>
+                  <li>Four Columns</li>
+                  <li>Four Columns Wide</li>
+                  <li>Five Columns Wide</li>
+                  <li>Six Columns Wide</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span>BLOG</span>
+            <hr />
+            <ul class="sub-menu">
+              <li>Right Sidebar</li>
+              <li>Left Sidebar</li>
+              <li>No Sidebar</li>
+              <li>
+                Post Types
+                <img
+                  class="logo"
+                  src="./images/ui/arrow-from-left.svg"
+                  alt=""
+                  width="10px"
+                />
+                <ul class="last-menu">
+                  <li>Standard Post</li>
+                  <li>Gallery Post</li>
+                  <li>Quote Post</li>
+                  <li>Link Post</li>
+                  <li>Audio Post</li>
+                  <li>Video Post</li>
+                  <li>No Sidebar Post</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <img class="logo" src="./images/logo-light.png" alt="site logo" />
+        <ul class="main-menu">
+          <li>
+            <span>ONLINE ORDER</span>
+            <hr />
+          </li>
+          <li>
+            <span onclick="ShowLogin();">LOGIN</span>
+            <hr />
+          </li>
+          <li>
+            <span>CART</span>
+            <hr />
+          </li>
+          <li>
+            <span>MENU</span>
+            <hr />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Radio Buttom-->
+    <section>
+      <div id="main-slider">
+        <input type="radio" id="radio1" name="radio1" checked />
+        <div class="slider">
+          <img src="./images/slider/h6-rev-slide-01.jpg" alt="this is slider" />
+
+          <img
+            class="arrow left"
+            src="./images/ui/arrow-from-left.svg"
+            alt="left"
+          />
+          <img
+            class="arrow right"
+            src="./images/ui/arrow-from-right.svg"
+            alt="right"
+          />
+        </div>
+        <input type="radio" id="radio2" name="radio1" />
+        <div class="slider">
+          <img src="./images/slider/h6-rev-slide-02.jpg" alt="this is slider" />
+          <img
+            class="arrow left"
+            src="./images/ui/arrow-from-left.svg"
+            alt="left"
+          />
+          <img
+            class="arrow right"
+            src="./images/ui/arrow-from-right.svg"
+            alt="right"
+          />
+        </div>
+        <input type="radio" id="radio3" name="radio1" />
+        <div class="slider">
+          <img src="./images/slider/h6-rev-slide-03.jpg" alt="this is slider" />
+          <img
+            class="arrow left"
+            src="./images/ui/arrow-from-left.svg"
+            alt="left"
+          />
+          <img
+            class="arrow right"
+            src="./images/ui/arrow-from-right.svg"
+            alt="right"
+          />
+        </div>
+        <div class="slider">
+          <img src="./images/slider/h6-rev-slide-03.jpg" alt="this is slider" />
+        </div>
+      </div>
+    </section>
+    <!--First Grid-->
+    <section class="grid">
+      <div class="g-item">
+        <img src="./images/first-grid/h6-banner-img1.jpg" alt="" />
+        <span class="g-subject">Ice Cream</span>
+        <br />
+        <span class="g-expl">Specialties with 100% cocoa</span>
+      </div>
+      <div class="g-item">
+        <img src="./images/first-grid/h6-banner-img2.jpg" alt="" />
+        <span class="g-subject">Choco Nuts</span>
+        <br />
+        <span class="g-expl">Specialties with 100% cocoa</span>
+      </div>
+      <div class="g-item">
+        <img src="./images/first-grid/h6-banner-img3.jpg" alt="" />
+        <span class="g-subject">Choco Fruits</span>
+        <br />
+        <span class="g-expl">Specialties with 100% cocoa</span>
+      </div>
+      <div class="g-item">
+        <img src="./images/first-grid/h6-banner-img4.jpg" alt="" />
+        <span class="g-subject">Gift Boxes</span>
+        <br />
+        <span class="g-expl">Specialties with 100% cocoa</span>
+      </div>
+    </section>
+    <section>
+      <div class="slogan">
+        <span>CHOCO LOVE</span>
+        <p>BAKED INTO A TRUE PERFECTION</p>
+        <span>Delight</span>
+      </div>
+    </section>
+    <section class="menu-grand-father">
+      <div class="menu-father">
+        <ul class="main-menu mini">
+          <li>
+            <span>ALL</span>
+            <hr />
+          </li>
+          <li>
+            <span>CONFISEURS </span>
+            <hr />
+          </li>
+          <li>
+            <span>CARAMEL</span>
+            <hr />
+          </li>
+          <li>
+            <span>POPULAR</span>
+            <hr />
+          </li>
+          <li>
+            <span>FUDGE</span>
+            <hr />
+          </li>
+        </ul>
+      </div>
+      <div class="secend-grid">
+        <div class="s-grid-item">
+          <img
+            class="moving"
+            src="./images/secend-gird/h6-shop-img1.jpg"
+            alt=""
+          />
+          <span class="item-name">Petits fours</span>
+          <span class="item-metrials">Caramel,Confiseurs</span>
+          <span class="item-price">$ 24.00</span>
+          <div class="item-pop">
+            <div>
+              <img src="./images/ui/plus.svg" alt="" />
+            </div>
+
+            <div>
+              <img src="./images/ui/heart.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="s-grid-item">
+          <img
+            class="moving"
+            src="./images/secend-gird/h6-shop-img2.jpg"
+            alt=""
+          />
+          <span class="item-name">Petits fours</span>
+          <span class="item-metrials">Caramel,Confiseurs</span>
+          <span class="item-price">$ 24.00</span>
+          <div class="item-pop">
+            <div>
+              <img src="./images/ui/plus.svg" alt="" />
+            </div>
+
+            <div>
+              <img src="./images/ui/heart.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="s-grid-item">
+          <img
+            class="moving"
+            src="./images/secend-gird/h6-shop-img3.jpg"
+            alt=""
+          />
+          <span class="item-name">Petits fours</span>
+          <span class="item-metrials">Caramel,Confiseurs</span>
+          <span class="item-price">$ 24.00</span>
+          <div class="item-pop">
+            <div>
+              <img src="./images/ui/plus.svg" alt="" />
+            </div>
+
+            <div>
+              <img src="./images/ui/heart.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="s-grid-item">
+          <img
+            class="moving"
+            src="./images/secend-gird/h6-shop-img4.jpg"
+            alt=""
+          />
+          <span class="item-name">Petits fours</span>
+          <span class="item-metrials">Caramel,Confiseurs</span>
+          <span class="item-price">$ 24.00</span>
+          <div class="item-pop">
+            <div>
+              <img src="./images/ui/plus.svg" alt="" />
+            </div>
+
+            <div>
+              <img src="./images/ui/heart.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="s-grid-item">
+          <img
+            class="moving"
+            src="./images/secend-gird/h6-shop-img5.jpg"
+            alt=""
+          />
+          <span class="item-name">Petits fours</span>
+          <span class="item-metrials">Caramel,Confiseurs</span>
+          <span class="item-price">$ 24.00</span>
+          <div class="item-pop">
+            <div>
+              <img src="./images/ui/plus.svg" alt="" />
+            </div>
+
+            <div>
+              <img src="./images/ui/heart.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="s-grid-item">
+          <img
+            class="moving"
+            src="./images/secend-gird/h6-shop-img6.jpg"
+            alt=""
+          />
+          <span class="item-name">Petits fours</span>
+          <span class="item-metrials">Caramel,Confiseurs</span>
+          <span class="item-price">$ 24.00</span>
+          <div class="item-pop">
+            <div>
+              <img src="./images/ui/plus.svg" alt="" />
+            </div>
+
+            <div>
+              <img src="./images/ui/heart.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="s-grid-item">
+          <img
+            class="moving"
+            src="./images/secend-gird/h6-shop-img7.jpg"
+            alt=""
+          />
+          <span class="item-name">Petits fours</span>
+          <span class="item-metrials">Caramel,Confiseurs</span>
+          <span class="item-price">$ 24.00</span>
+          <div class="item-pop">
+            <div>
+              <img src="./images/ui/plus.svg" alt="" />
+            </div>
+
+            <div>
+              <img src="./images/ui/heart.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="s-grid-item">
+          <img
+            class="moving"
+            src="./images/secend-gird/h6-shop-img8.jpg"
+            alt=""
+          />
+          <span class="item-name">Petits fours</span>
+          <span class="item-metrials">Caramel,Confiseurs</span>
+          <span class="item-price">$ 24.00</span>
+          <div class="item-pop">
+            <div>
+              <img src="./images/ui/plus.svg" alt="" />
+            </div>
+
+            <div>
+              <img src="./images/ui/heart.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="offer-back">
+      <div class="offer">
+        <span>HOT CHOCOLATE</span>
+        <span>THE SPECIAL TASTE</span>
+        <p>
+          Lorem ipsum dolor sit amet, an cibo comprehensam quo, eu quas mentitum
+          vel. Ea nam aperiri dissentias, vis eros deleniti ocurreret at.
+        </p>
+        <div class="btn">Read More</div>
+      </div>
+      <div class="bg-holder"></div>
+    </section>
+
+    <div class="flexbox">
+      <a href="#">
+        <img src="./images/ui/h1-icon-with-text-img1.png" alt="" />
+        Customer Service
+      </a>
+      <a href="#">
+        <img src="./images/ui/h1-icon-with-text-img2.png" alt="" />
+        Buy Chocolate Online
+      </a>
+      <a href="#">
+        <img src="./images/ui/h1-icon-with-text-img3.png" alt="" />
+        Find Us
+      </a>
+    </div>
+
+    
+    <footer>
+      <div class="first-div">
+        <div>
+          <img src="./images/logo-light.png" alt="" />
+        </div>
+        <div>
+          <span>Useful Links</span>
+          <ul>
+            <li>About Us</li>
+            <li>History</li>
+            <li>Our Locations</li>
+            <li>Today’s Menu</li>
+            <li>Blog</li>
+            <li>Shop</li>
+          </ul>
+        </div>
+        <div>
+          <span> Favourite </span>
+          <ul>
+            <li>Orange Pralines</li>
+            <li>Amaretti Oreo</li>
+            <li>Choco Mousse</li>
+            <li>Chocolate Truffles</li>
+            <li>American Cake</li>
+          </ul>
+        </div>
+        <div>
+          <span> Newsletter </span>
+          <p>
+            Subscribe to get special offers, free gifts and once-in-a-lifetime
+            deals.
+          </p>
+          <input type="email" placeholder="Enter Your Email..." />
+          <div></div>
+        </div>
+      </div>
+      <div class="secend-div">
+        <div>
+          <img src="./images/ui/footer-img-1 (1).png" alt="" />
+          <img src="./images/ui/footer-img-2.png" alt="" />
+          <img src="./images/ui/footer-img-3.png" alt="" />
+          <img src="./images/ui/footer-img-4.png" alt="" />
+          <img src="./images/ui/footer-img-5.png" alt="" />
+          <img src="./images/ui/footer-img-6.png" alt="" />
+        </div>
+      </div>
+      <div class="copy-right">© 2021 Qode Interactive, All Rights Reserved</div>
+    </footer>
+
+    
+  
+    <div id="form-background" class="form-background">
+      <div class="bad-background"  onclick="HideLogin();"></div>
+      <form  id="myform" class="login-form" action="">
+      
+        <input type="radio" name="radio" id="radio-1" class="hidden" checked>
+        
+        <input type="radio" name="radio" id="radio-2" class="hidden">
+       
+          <div class="split-two">
+           <label for="radio-1" class="selected" onclick="Smallbox();"><span >LOGIN</span></label>
+           <label for="radio-2" class="not" onclick="Bigbox();"><span >REGISTER</span></label>
+           
+          </div>
+          <fieldset class="mx-30">
+            <legend class="legend-1">UserName</legend>
+            <legend class="legend-2">UserName :</legend>
+            <input
+              type="email"
+              placeholder="- - - - - - - - - - -"
+              required
+              minlength="6"
+              title="Enter Your Email Here"
+            />
+          </fieldset>
+          <fieldset  class="mx-30 register-check" >
+            <legend class="legend-1">Email</legend>
+            <legend class="legend-2">Email :</legend>
+            <input
+              type="email"
+              placeholder="- - - - - - - - - - -"
+              required
+              minlength="8"
+              title="Enter Your Email Here"
+            />
+          </fieldset>
+          <fieldset  class="mx-30" >
+            <legend class="legend-1">Password</legend>
+            <legend class="legend-2">Password :</legend>
+            <input
+              type="password"
+              placeholder="- - - - - - - - - - -"
+              required
+              minlength="8"
+              title="Enter Your Password Here"
+            />
+          </fieldset>
+          <fieldset  class="mx-30 register-check" >
+            <legend class="legend-1">Repeat Password</legend>
+            <legend class="legend-2">Repeat Password :</legend>
+            <input
+              type="password"
+              placeholder="- - - - - - - - - - -"
+              required
+              minlength="8"
+              title="Enter Your Password Here"
+            />
+          </fieldset>
+          <div  class="mx-30 login-check">
+            <input type="checkbox" name="remember" id="remember">
+          <label for="remember">Remember me</label>
+    
+          </div>
+          <div class="split-two login-check">
+              <span ><a class="lost-pass" href="#">Lost Your Password ?</a></span>
+              <span class="mega-border"><div><button>LOGIN</button></div></span>
+            </div>
+            <div class="split-two register-check">
+              
+              <span class="mega-border"><div><button>Register</button></div></span>
+            </div>
+      </form>
+    </div>
+
+
+    <script src="./js/javascript.js"></script>
+  </body>
+</html>

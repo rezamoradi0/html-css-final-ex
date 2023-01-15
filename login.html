@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css" />
+</head>
+<body>
+    
+   
+        <form  id="myform" class="login-form" action="">
+          <input type="radio" name="radio" id="radio-1" class="hidden" checked>
+          
+          <input type="radio" name="radio" id="radio-2" class="hidden">
+         
+            <div class="split-two">
+             <label for="radio-1" class="selected" onclick="Smallbox();"><span >LOGIN</span></label>
+             <label for="radio-2" class="not" onclick="Bigbox();"><span >REGISTER</span></label>
+             
+            </div>
+            <fieldset class="mx-30">
+              <legend class="legend-1">UserName</legend>
+              <legend class="legend-2">UserName :</legend>
+              <input
+                type="email"
+                placeholder="- - - - - - - - - - -"
+                required
+                minlength="6"
+                title="Enter Your Email Here"
+              />
+            </fieldset>
+            <fieldset  class="mx-30 register-check" >
+              <legend class="legend-1">Email</legend>
+              <legend class="legend-2">Email :</legend>
+              <input
+                type="email"
+                placeholder="- - - - - - - - - - -"
+                required
+                minlength="8"
+                title="Enter Your Email Here"
+              />
+            </fieldset>
+            <fieldset  class="mx-30" >
+              <legend class="legend-1">Password</legend>
+              <legend class="legend-2">Password :</legend>
+              <input
+                type="password"
+                placeholder="- - - - - - - - - - -"
+                required
+                minlength="8"
+                title="Enter Your Password Here"
+              />
+            </fieldset>
+            <fieldset  class="mx-30 register-check" >
+              <legend class="legend-1">Repeat Password</legend>
+              <legend class="legend-2">Repeat Password :</legend>
+              <input
+                type="password"
+                placeholder="- - - - - - - - - - -"
+                required
+                minlength="8"
+                title="Enter Your Password Here"
+              />
+            </fieldset>
+            <div  class="mx-30 login-check">
+              <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember me</label>
+      
+            </div>
+            <div class="split-two login-check">
+                <span ><a href="#">Lost Your Password ?</a></span>
+                <span class="mega-border"><div><button>LOGIN</button></div></span>
+              </div>
+              <div class="split-two register-check">
+                
+                <span class="mega-border"><div><button>Register</button></div></span>
+              </div>
+        </form>
+      
+   
+</body>
+</html>

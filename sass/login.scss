@@ -1,0 +1,259 @@
+
+$legend-width:40px;
+// body{
+//     background-color: whitesmoke;
+//     background-color: rgba($color: #919191, $alpha: 0.3);
+// }
+form.login-form {
+   display: none;
+    
+ *{
+    box-sizing: border-box;
+ }
+}
+
+.form-background{
+ 
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color:rgba(141, 141, 141,0.7);
+    z-index: 19;
+    top: 0px;
+    left: 0px;
+    &.active-form{
+       position: fixed;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .bad-background{
+        z-index: 19;
+        width: 100%;
+        height: 100%;
+    }
+    .active-form{
+        position: absolute;
+        margin: auto !important;
+        display:flex !important;
+        
+    z-index: 20;
+    
+    }
+}
+
+.lost-pass{
+    text-decoration: none;
+    color: #919191;
+    &:hover{
+        color: black;
+    }
+}
+.login-form{
+  
+    margin: 25vh auto; 
+    width:max(35%,370px);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: relative;
+    fieldset{
+       height: 60px;
+        border: none;
+        border-bottom: 2px rgb(92, 92, 92) solid;
+        padding: 10px 0px;
+        input{
+            cursor: pointer;
+        }
+        input:focus-within{
+            cursor:default;
+        }
+        input[type="email"],  input[type="password"]{
+            outline: none;
+            border: none;
+            width: 70%;
+            height: 100%;
+
+       
+        }
+        input::placeholder{
+            letter-spacing: 4px;
+        }
+        &:focus-within{
+            border: 2px  dashed rgb(120, 120, 120);
+            border-bottom: 3px  solid rgb(92, 92, 92);
+            border-top: 2px  dashed rgb(167, 167, 167);
+            border-radius: 15px;
+            input::placeholder{
+            opacity: 0%;
+            }
+          
+            .legend-1{
+                display:inline-block;
+                color:  rgb(167, 167, 167);
+            }
+            .legend-2{
+                display: none;
+            }
+            &:valid{
+                border: 2px  dashed rgb(92, 92, 92);
+                border-top: 2px  dashed rgb(92, 92, 92);
+                border-bottom: 3px  solid rgb(92, 92, 92);
+            }
+          
+        }
+        &:valid{
+   
+            .legend-1{
+                
+                color:  rgb(0, 0, 0);
+            }
+            .legend-2{
+                color:  rgb(0, 0, 0) ;
+            }
+        }
+    }
+    
+    
+    .column{
+        flex-direction: column;
+        background-color: transparent;
+    }
+    .split-two{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        >label,>span{
+            width: 50%;
+            text-align: center;
+            padding:30px;
+           
+            &.selected{
+               background-color: transparent;
+               cursor: pointer;
+            }
+            &.not{
+                background-color:whitesmoke;
+                cursor: pointer;
+            }
+            
+        }
+        button{
+           width: 100%;
+            text-align: center;
+            padding:20px;
+            cursor: pointer;
+          //  background-color: transparent;
+        }
+     
+    }
+    .hidden{
+        display: none;
+    }
+    .legend-1{
+        display: none;
+        color:  rgb(167, 167, 167);
+    }
+    .legend-2{
+        display: contents;
+        color:  rgb(167, 167, 167);
+    }
+}
+.mx-30{
+     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mega-border {
+    position: relative;
+    button{
+        position: relative;
+        z-index: 4;  
+        background-color: #ffffff;
+        border: #919191;
+    }
+    &>div{
+      z-index: 2;  
+   padding: 5px;
+   background-color: rgb(110, 110, 110);
+   overflow: hidden;
+   position: relative;
+    }
+  
+
+    &:hover{
+        &>div::before{
+            content: '';
+            width:20px;
+            height: 400px;
+            background-color:rgba(255, 255, 255, 0.4);
+            border-left: solid 1px rgb(246, 246, 246);
+            border-right: solid 1px rgb(246, 246, 246);
+            position: absolute;
+         top: -250%;
+         right: 45%;
+            z-index: 1; 
+            animation-name: hover-anim;
+            animation-timing-function:ease-in-out;
+            animation-fill-mode:forwards;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+
+        }
+    }
+}
+@keyframes hover-anim {
+    from{
+    transform:rotateZ(0deg);
+    }
+    to{
+     
+        transform: rotateZ(360deg);
+    }
+}
+
+input[type="radio"]{
+&#radio-1:checked{
+&~.login-check{
+    display: inline-flex;
+}
+  &~.register-check{
+    display: none;
+  }  
+  &~.split-two{
+    .selected{
+        background-color: transparent;
+    }
+    .not{
+        background-color:whitesmoke;
+    }
+  }
+}
+&#radio-2:checked{
+    &~.register-check{
+        display: inline-flex;
+    }
+      &~.login-check{
+        display: none;
+      }  
+      &~.split-two{
+        .selected{
+            background-color:whitesmoke;
+        }
+        .not{
+            background-color: transparent; 
+        }
+      }
+    }
+}

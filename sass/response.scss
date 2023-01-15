@@ -1,0 +1,158 @@
+
+.offer{
+    height: 90%;
+}
+@media (max-width:1024px) {
+    .logo{
+        display: none;
+    }
+    .slogan{
+         p{
+        width: 70%;
+    }
+    span:last-child{
+        bottom: 15vw;
+    }
+    }
+   
+    .offer {
+        margin: auto auto;
+        width: 100%;
+        background-attachment: fixed;
+        object-fit: contain;
+
+    }
+
+    .bg-holder {
+        transform: scaleX(1) !important;
+
+    }
+
+    .grid {
+
+        margin-top: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .secend-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .first-div {
+
+        flex-wrap: wrap !important;
+
+        div {
+            width: 50% !important;
+        }
+    }
+
+}
+@media (max-width:910px) {
+    .menu-grand-father .menu-father{
+        flex-direction: column;
+    }
+}
+@media (max-width:768px) {
+  
+    .grid {
+
+        margin-top: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+    .flexbox{
+        padding: 30px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        a {
+            justify-content: flex-start;
+            width: 90%;
+          
+        }
+    }
+    .offer {
+        span:first-child{
+            font-size: 12px;
+        }
+        span:nth-child(2){
+            font-size: 5.5rem;
+        }
+        
+    }
+    .slogan {
+        span:nth-of-type(1){
+            font-size: 13px;
+        }
+        span:nth-of-type(2){
+            font-size: 5.5rem;
+            bottom: max (16vw,150px)  !important;
+        }
+        p {
+            font-size: 2.5rem;
+        }
+    }
+
+}
+
+@media (max-width: 680px){
+
+.arrow {
+    width: 25px;
+    height: 25px;
+}
+
+.menu-grand-father .menu-father ul.main-menu 
+ {
+        padding-left: 0px;
+     //   flex-direction: column !important;
+
+}
+    .secend-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 550px) {
+    .menu-grand-father .menu-father ul.main-menu .last-menu{
+        left: 150px;
+        top: -100px;
+    }
+    .main-menu li{
+        margin-right: 0px !important;
+    }
+    .sub-menu{
+        left: 0;
+    }
+    .slogan {
+        span:nth-of-type(1){
+            font-size: 12px;
+        }
+        span:nth-of-type(2){
+            font-size: 2.5rem;
+            bottom: max (16vw,150px)  !important;
+            left: 10px !important;
+
+        }
+        p {
+            font-size: 2rem;
+        }
+    }
+    .offer {
+        span:first-child{
+            font-size: 12px;
+        }
+        span:nth-child(2){
+            font-size: 4rem;
+        }
+        
+    }
+}
